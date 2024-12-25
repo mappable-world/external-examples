@@ -1,0 +1,21 @@
+{
+  "name": "external-examples",
+  "version": "1.0.0",
+  "private": true,
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "node --env-file-if-exists .env -r ts-node/register ./tools/build.ts",
+    "test": "node --env-file-if-exists .env -r ts-node/register ./tools/test.ts",
+    "lint": "node --env-file-if-exists .env -r ts-node/register ./tools/lint.ts",
+    "postinstall": "node -r ts-node/register ./tools/postinstall.ts",
+    "github-pages": "node -r ts-node/register ./tools/github-pages.ts"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
