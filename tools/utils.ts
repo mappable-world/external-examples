@@ -17,11 +17,16 @@ export function getExamples() {
     }));
 }
 
-export function runScriptForAll(script: string) {
+export function runScriptForAll(
+  script: string,
+  options: { custom?: boolean } = { custom: true }
+) {
   getExamples().forEach((example) => {
     console.log(`Run script "${script}" for ${example.name}`);
 
-    execFileSync("npm", ["run", script], {
+    const args = options?.custom ? ["run", script] : [script];
+
+    execFileSync("npm", args, {
       cwd: example.path,
     });
   });

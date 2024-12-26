@@ -1,0 +1,28 @@
+.card {
+    flex: 1;
+
+    min-width: 105px;
+    max-width: 183px;
+    padding: 10px 12px;
+
+    border: 1px solid rgba(92, 94, 102, 0.14);
+    border-radius: 12px;
+}
+
+.title {
+    font-size: 14px;
+
+    color: #7b7d85;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 8px;
+}
+
+.count {
+    font-size: 20px;
+    font-weight: 500;
+}

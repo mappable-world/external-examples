@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #050d33;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgba(92, 94, 102, 0.14);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.modal-container {
+    position: relative;
+}
+
+.modal-control {
+    position: absolute;
+    top: -8px;
+    left: 47%;
+
+    width: 40px;
+    height: 3px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-content {
+    overflow: hidden;
+}
+
+.circle {
+    align-self: center;
+
+    width: 12px;
+    height: 12px;
+
+    text-align: center;
+
+    border-radius: 50%;
+}
+
+.circle.green {
+    background-color: #5ed686;
+}
+
+.circle.orange {
+    background-color: #ffb200;
+}
+
+.circle.red {
+    background-color: #ff5e5e;
+}
+
+/* custom styles for react-modal-sheet */
+.react-modal-sheet-backdrop {
+    background-color: rgba(5, 13, 51, 0.4) !important;
+}

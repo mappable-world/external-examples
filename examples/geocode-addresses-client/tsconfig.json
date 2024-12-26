@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": true,
+        "target": "es2017",
+        "module": "es2022",
+        "moduleResolution": "node",
+        "skipDefaultLibCheck": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "jsx": "react-jsx"
+    },
+    "include": ["src/**/*"]
+}
