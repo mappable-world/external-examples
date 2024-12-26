@@ -4,7 +4,12 @@ import { execFileSync } from "child_process";
 
 const EXAMPLES_DIR_PATH = path.resolve(__dirname, "../examples");
 
-export function getExamples() {
+export type Example = {
+  name: string;
+  path: string;
+};
+
+export function getExamples(): Example[] {
   return fs
     .readdirSync(EXAMPLES_DIR_PATH, { withFileTypes: true })
     .filter((file) => file.isDirectory())
