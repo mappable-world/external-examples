@@ -1,0 +1,48 @@
+{
+  "name": "geocode-client",
+  "description": "geocode client interface",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "start": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@mappable-world/mappable-default-ui-theme": "^0.0.18",
+    "@mappable-world/mappable-types": "^1.0.15457591",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@webpack-cli/generators": "^3.0.7",
+    "classnames": "^2.5.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-modal-sheet": "^3.3.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/css-modules": "^1.0.5",
+    "autoprefixer": "^10.4.20",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.7",
+    "framer-motion": "11.11.17",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "postcss-nested": "^7.0.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
