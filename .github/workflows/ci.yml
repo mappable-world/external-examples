@@ -25,3 +25,5 @@ jobs:
         run: npm run test
       - name: Lint examples
         run: npm run lint
+      - name: Check GitHub Pages static build
+        run: npm run github-pages
