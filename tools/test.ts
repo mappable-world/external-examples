@@ -1,10 +1,3 @@
-import { execFileSync } from "child_process";
-import { getExamples } from "./utils";
+import { runScriptForAll } from "./utils";
 
-getExamples().forEach((example) => {
-  console.log(`Test ${example.name}`);
-
-  execFileSync("npm", ["run", "test"], {
-    cwd: example.path,
-  });
-});
+runScriptForAll("test");
