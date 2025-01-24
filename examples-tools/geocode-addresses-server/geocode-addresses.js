@@ -24,10 +24,7 @@ const argv = yargs(hideBin(process.argv))
   })
   .option("geocode-option-lang", {
     describe: "lang=<string>",
-    type: "string",
-  })
-  .option("geocode-option-kind", {
-    describe: "[kind=<string>]",
+    default: "en_US",
     type: "string",
   })
   .option("geocode-option-rspn", {
@@ -53,14 +50,6 @@ const argv = yargs(hideBin(process.argv))
   .option("geocode-option-skip", {
     describe: "[skip=<integer>]",
     type: "number",
-  })
-  .option("geocode-option-uri", {
-    describe: "[uri=<string>]",
-    type: "string",
-  })
-  .option("geocode-option-format", {
-    describe: "[format=<string>]",
-    type: "string",
   })
   .strict().argv;
 
