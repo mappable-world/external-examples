@@ -70,8 +70,3 @@ body,
 .circle.red {
     background-color: #ff5e5e;
 }
-
-/* custom styles for react-modal-sheet */
-.react-modal-sheet-backdrop {
-    background-color: rgba(5, 13, 51, 0.4) !important;
-}

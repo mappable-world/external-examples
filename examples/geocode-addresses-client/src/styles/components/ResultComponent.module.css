@@ -1,325 +1,337 @@
 .wrapper {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    width: 100%;
-    height: 100%;
-    padding: 12px;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
 
-    background-color: #f5f6f7;
-    gap: 12px;
+  background-color: #f5f6f7;
+  gap: 12px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 
-    width: 40%;
-    height: 100%;
+  width: 40%;
+  height: 100%;
 
-    border-radius: 16px;
-    background-color: #fff;
+  border-radius: 16px;
+  background-color: #fff;
 }
 
 .inputContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-    align-self: baseline;
+  align-self: baseline;
 
-    width: 100%;
-    padding: 32px 32px 12px;
+  width: 100%;
+  padding: 32px 32px 12px;
 }
 
 .title {
-    display: flex;
-    align-content: center;
+  display: flex;
+  align-content: center;
 
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
 
-    color: #050d33;
-    gap: 10px;
+  color: #050d33;
+  gap: 10px;
 }
 
 .inputContent {
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 152px;
+  column-gap: 52px;
 
-    margin-bottom: 16px;
-    gap: 52px;
+  margin-bottom: 16px;
 }
 
 .mapContainer {
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 60%;
-    height: 100%;
+  width: 60%;
+  height: 100%;
 
-    border-radius: 16px;
+  border-radius: 16px;
 
-    animation: map-show 0.5s ease-in-out;
+  animation: map-show 0.5s ease-in-out;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .input {
-    display: flex;
-    flex-grow: 1;
-    gap: 8px;
+  display: flex;
+  flex-grow: 1;
+  gap: 8px;
 }
 
 .button {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 
-    align-items: center;
+  align-items: center;
 }
 
 .divider {
-    width: 100%;
-    height: 1px;
+  width: 100%;
+  height: 1px;
 
-    border: none;
-    background-color: rgba(92, 94, 102, 0.14);
+  border: none;
+  background-color: rgba(92, 94, 102, 0.14);
 }
 
 .cards {
-    display: flex;
-    overflow: auto;
-    flex-direction: column;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
 
-    height: 900px;
-    padding: 16px 32px 0;
-    gap: 16px;
+  height: 900px;
+  padding: 16px 32px 0;
+  gap: 16px;
 }
 
 .cardsTop {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-    padding: 16px 32px;
+  padding: 16px 24px;
+}
+
+.cardsTop.mobile {
+  padding: 16px 16px;
 }
 
 .cardsHeader {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cardsTitle {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 
-    color: #050d33;
+  color: #050d33;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 
-    align-items: center;
+  align-items: center;
 }
 
 .cardsBlock {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
 }
 
 .resultList {
-    overflow: auto;
+  overflow: auto;
 
-    margin: 0;
-    margin-top: 12px;
-    margin-right: 3px;
-    padding: 0 24px;
+  margin: 0;
+  margin-top: 12px;
+  margin-right: 3px;
+  padding: 0;
+  font-size: 14px;
 }
 
 .mapWrapper {
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 100%;
-    height: 100%;
-    padding: 2px 2px 0;
+  width: 100%;
+  height: 100%;
+  padding: 2px 2px 0;
 
-    border-top-left-radius: 27px;
-    border-top-right-radius: 27px;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
 
-    padding: 10px 12px;
+  padding: 10px 24px;
 
-    border-radius: 8px;
+  border-radius: 8px;
+}
+
+li.mobile {
+  padding: 10px 16px;
 }
 
 li:hover {
-    background-color: rgba(92, 94, 102, 0.04);
+  background-color: rgba(92, 94, 102, 0.04);
 }
 
 .listItemTitle {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: #050d33;
-    gap: 16px;
+  color: #050d33;
+  gap: 16px;
 }
 
 .listItemContent {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .text.green {
-    color: #5ed686;
+  color: #5ed686;
 }
 
 .text.orange {
-    color: #ffb200;
+  color: #ffb200;
 }
 
 .text.red {
-    color: #ff5e5e;
+  color: #ff5e5e;
 }
 
 .iconWrapper {
-    display: flex;
+  display: flex;
 
-    padding: 16px 14px;
+  padding: 16px 14px;
 
-    border-radius: 12px;
-    background-color: rgba(92, 94, 102, 0.06);
-    gap: 8px;
+  border-radius: 12px;
+  background-color: rgba(92, 94, 102, 0.06);
+  gap: 8px;
 }
 
 .popup {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .strokedText {
-    color: #7b7d85;
+  color: #7b7d85;
 }
 
 .text {
-    color: #050d33;
+  color: #050d33;
 }
 
 .closeButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 #5f698333;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 #5f698333;
 }
 
 .zoomOutButton {
-    padding: 12px 16px;
+  padding: 12px 16px;
 
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 #5f698333;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 #5f698333;
 }
 
 @media (max-width: 425px) {
-    .wrapper {
-        padding: 0;
-    }
+  .wrapper {
+    padding: 0;
+  }
 
-    .cardsBlock {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .cardsBlock {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .cardsHeader {
-        flex-direction: column;
-        gap: 16px;
-    }
+  .cardsHeader {
+    flex-direction: column;
+    gap: 16px;
+  }
 
-    .cards {
-        padding: 16px;
-    }
+  .cards {
+    padding: 16px;
+  }
 
-    .content {
-        width: 100%;
-        padding: 16px;
-    }
+  .content {
+    width: 100%;
+    padding: 16px;
+  }
 
-    .cardsSubtitle {
-        display: flex;
-        justify-content: space-between;
-    }
+  .cardsSubtitle {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .container {
-        flex-direction: column;
-        justify-content: start;
+  .container {
+    flex-direction: column;
+    justify-content: start;
 
-        width: 100%;
-    }
+    width: 100%;
+  }
 
-    .inputContainer {
-        padding: 12px 16px;
-    }
+  .inputContainer {
+    padding: 12px 16px;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 426px) {
-    .mapContainer {
-        width: 100%;
-        height: 50vw;
+  .mapContainer {
+    width: 100%;
+    height: 50vh;
+    flex-shrink: 0;
 
-        animation: none;
-    }
+    animation: none;
+  }
 
-    .wrapper {
-        flex-direction: column-reverse;
+  .wrapper {
+    flex-direction: column-reverse;
 
-        height: auto;
-    }
+    height: 100vh;
+  }
 
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
 
-    .cards {
-        padding: 16px 160px;
-    }
+  .cards {
+    padding: 16px 160px;
+  }
 
-    .inputContainer {
-        padding: 32px 160px 12px;
-    }
+  .inputContainer {
+    padding: 32px 32px 12px;
+  }
 }
 
 @keyframes map-show {
-    0% {
-        transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
