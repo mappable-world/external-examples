@@ -6,11 +6,17 @@ const { EnvironmentPlugin } = require("webpack");
 
 require("dotenv").config();
 
+const isProduction = process.env.NODE_ENV == "production";
+
 const CSSModuleLoader = {
   loader: "css-loader",
   options: {
     esModule: false,
-    modules: true,
+    modules: {
+      localIdentName: isProduction
+        ? "[hash:base64]"
+        : "[name]__[local]--[hash:base64:5]",
+    },
   },
 };
 
@@ -18,7 +24,6 @@ const CSSLoader = {
   loader: "css-loader",
 };
 
-const isProduction = process.env.NODE_ENV == "production";
 const styleLoader = isProduction ? MiniCssExtractPlugin.loader : "style-loader";
 
 process.env.API_URL ??= "https://js.api.mappable.world/v3/";

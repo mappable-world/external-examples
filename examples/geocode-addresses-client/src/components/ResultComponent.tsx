@@ -331,13 +331,13 @@ export const ResultComponent: FC = () => {
             </div>
             <div className={styles.cardsSubtitle}>
               <div className={styles.buttons}>
-                <Button onClick={onXLSXDownloadClick}>
+                <Button onClick={onXLSXDownloadClick} fontSize="small">
                   <div className={styles.button}>
                     <DownloadIcon />
                     <div>XSLX</div>
                   </div>
                 </Button>
-                <Button onClick={onJSONDownloadClick}>
+                <Button onClick={onJSONDownloadClick} fontSize="small">
                   <div className={styles.button}>
                     <DownloadIcon />
                     <div>JSON</div>
