@@ -45,11 +45,11 @@
 }
 
 .inputContent {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 152px;
+  column-gap: 52px;
 
   margin-bottom: 16px;
-  gap: 52px;
 }
 
 .mapContainer {
