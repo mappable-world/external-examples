@@ -323,7 +323,7 @@ export const ResultComponent: FC = () => {
 
         <hr className={styles.divider} />
 
-        <div className={styles.cardsTop}>
+        <div className={cx("cardsTop", { mobile: isMobiles })}>
           <div className={styles.cardsHeader}>
             <div className={styles.cardsTitle}>
               <div>Result of a defining</div>
@@ -359,17 +359,18 @@ export const ResultComponent: FC = () => {
               />
             ))}
           </div>
-        </div>
 
-        {isMobiles && (
-          <Button size="big" onClick={onChangeViewClick}>
-            Open on a map
-          </Button>
-        )}
+          {isMobiles && (
+            <Button size="big" onClick={onChangeViewClick}>
+              Open on a map
+            </Button>
+          )}
+        </div>
 
         <ul className={styles.resultList}>
           {result.map((geocodingResult) => (
             <li
+              className={cx({ mobile: isMobiles })}
               key={geocodingResult.id}
               onMouseOver={() => onMouseOver(geocodingResult)}
               onMouseOut={onMouseOut}
